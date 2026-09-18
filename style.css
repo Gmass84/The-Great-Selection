@@ -628,11 +628,28 @@ h1 {
 
 @media (max-width: 700px) {
 
-    /* ---------- INTRO ---------- */
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    #app {
+        width: 100%;
+        height: 100dvh;
+        overflow: hidden;
+    }
+
+
+    /* ========================================
+       INTRO
+       ======================================== */
 
     #intro {
         width: 100%;
-        height: 100vh;
+        height: 100dvh;
 
         display: flex;
         flex-direction: column;
@@ -640,10 +657,9 @@ h1 {
         overflow: hidden;
     }
 
-    /* Imagen: mitad superior */
     #intro-image {
         width: 100%;
-        height: 50vh;
+        height: 50dvh;
 
         flex-shrink: 0;
 
@@ -651,11 +667,11 @@ h1 {
         object-position: center center;
     }
 
-    /* Texto + botón: mitad inferior */
     #intro-panel {
         width: 100%;
-        height: 50vh;
+        height: 50dvh;
 
+        flex-shrink: 0;
         box-sizing: border-box;
 
         display: flex;
@@ -664,37 +680,46 @@ h1 {
         align-items: center;
 
         padding: 30px 25px;
+
+        overflow: hidden;
     }
 
 
-    /* ---------- TEST ---------- */
+    /* ========================================
+       TEST
+       ======================================== */
 
     #test {
         width: 100%;
-        min-height: 100vh;
+        height: 100dvh;
+        min-height: 0;
 
         display: flex;
         flex-direction: column;
+
+        overflow: hidden;
     }
 
-    /* Ocultar completamente la imagen del test */
+    /* Nada de imagen en el móvil */
     #test-image-container {
         display: none;
     }
 
-    /* Preguntas y respuestas ocupan toda la pantalla */
     #test-content {
         width: 100%;
-        min-height: 100vh;
+        height: 100dvh;
+        min-height: 0;
 
         box-sizing: border-box;
 
-        padding: 40px 20px;
+        padding: 30px 20px;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        overflow: hidden;
     }
 
     #answers {
@@ -705,5 +730,27 @@ h1 {
     .answer {
         width: 100%;
         box-sizing: border-box;
+    }
+
+
+    /* ========================================
+       RESULTADO
+       ======================================== */
+
+    #result {
+        width: 100%;
+        height: 100dvh;
+        min-height: 0;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 30px 20px;
     }
 }
