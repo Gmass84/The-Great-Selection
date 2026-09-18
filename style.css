@@ -792,4 +792,12 @@ h1 {
 
         padding: 30px 20px;
     }
+.answer:hover,
+.answer:active,
+.answer:focus {
+    background: #181818 !important;
+    color: white !important;
+    border-color: #555 !important;
+    transform: none !important;
+}
 }
