@@ -623,135 +623,54 @@ h1 {
     cursor: pointer;
 }
 /* ========================================
-   MÓVIL
+   AJUSTES MÓVIL
    ======================================== */
 
 @media (max-width: 700px) {
 
     html,
     body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
         overflow: hidden;
     }
 
     #app {
-        width: 100%;
         height: 100dvh;
         overflow: hidden;
     }
 
-
-    /* ========================================
-       INTRO
-       ======================================== */
-
+    /* INTRO */
     #intro {
-        width: 100%;
         height: 100dvh;
-
-        display: flex;
-        flex-direction: column;
-
         overflow: hidden;
     }
 
     #intro-image {
-        width: 100%;
         height: 50dvh;
-        flex-shrink: 0;
-
         object-fit: cover;
         object-position: center center;
     }
 
     #intro-panel {
-        width: 100%;
         height: 50dvh;
-        flex-shrink: 0;
-
-        box-sizing: border-box;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        padding: 30px 25px;
-
         overflow: hidden;
     }
 
-
-    /* ========================================
-       TEST
-       ======================================== */
-
-    /* Cuando el test está visible */
-    #test:not(.hidden) {
-        display: flex;
-
-        width: 100%;
-        height: 100dvh;
-        min-height: 0;
-
-        overflow: hidden;
-    }
-
-    /* Ocultar completamente la imagen */
+    /* TEST: solamente quitamos la imagen */
     #test-image-container {
         display: none;
     }
 
-    /* Contenido del test ocupa toda la pantalla */
+    /* El contenido ocupa la pantalla */
     #test-content {
         width: 100%;
         height: 100dvh;
-        min-height: 0;
-
         box-sizing: border-box;
-
-        padding: 30px 20px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
         overflow: hidden;
     }
 
-    #answers {
-        width: 100%;
-        max-width: none;
-    }
-
-    .answer {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-
-    /* ========================================
-       RESULTADO
-       ======================================== */
-
-    #result:not(.hidden) {
-        display: flex;
-
-        width: 100%;
+    /* RESULTADO */
+    #result {
         height: 100dvh;
-        min-height: 0;
-
-        box-sizing: border-box;
-
         overflow: hidden;
-
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        padding: 30px 20px;
     }
 }
