@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Test Mudra</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main id="app">
+    <div id="transicion-final"></div>
+    <!-- PORTADA -->
+
+    <section id="cover">
+
+        <h1>LA GRAN SELECCIÓN</h1>
+
+        <p>
+            Enhorabuena, fuiste seleccionado para algo más grande que tú
+        </p>
+
+        <button id="start-button">CONTINUAR</button>
+
+    </section>
+
+
+    <!-- INTRODUCCIÓN -->
+
+    <section id="intro" class="hidden">
+
+        <img id="intro-image" src="img/intro1.png">
+
+        <div id="intro-panel">
+
+            <p id="intro-text"></p>
+
+            <button id="intro-button">CONTINUAR</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- TEST -->
+
+    <section id="test" class="hidden">
+
+        <aside id="test-image-container">
+
+            <img src="img/intro4.png" id="test-image">
+
+        </aside>
+
+        <div id="test-content">
+
+            <p id="progress"></p>
+
+            <h2 id="question"></h2>
+
+            <div id="answers"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESULTADO -->
+
+    <section id="result" class="hidden">
+
+        <h2>Tus Órdenes</h2>
+
+        <div id="result-orders"></div>
+
+    </section>
+
+</main>
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
