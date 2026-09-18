@@ -802,4 +802,18 @@ h1 {
         transform: none !important;
     }
 
+    #result-orders {
+        width: 100%;
+        max-width: none;
+
+        max-height: calc(100dvh - 160px);
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        box-sizing: border-box;
+
+        padding: 10px 5px 40px;
+    }
+
 }
