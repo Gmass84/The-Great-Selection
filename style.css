@@ -781,3 +781,24 @@ h1 {
         padding: 30px 20px;
     }
 }
+@media (max-width: 700px) {
+
+    /* ...todo lo que ya tienes... */
+
+
+    /* EVITAR HOVER PEGADO EN MÓVIL */
+
+    .answer:hover {
+        background: #181818;
+        color: white;
+        border-color: #555;
+        transform: none;
+    }
+
+    .answer:active {
+        background: #f2a900;
+        color: #111;
+        border-color: #f2a900;
+        transform: none;
+    }
+}
